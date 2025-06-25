@@ -6,7 +6,8 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: '/', // Base path for GitHub Pages project site
+  // /docverge-website/ is important for github pages
+  base: process.env.NODE_ENV === 'production' ? '/docverge-website/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
