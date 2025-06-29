@@ -2,6 +2,7 @@
 
 ```bash
 docker build -t docverge . --no-cache
+docker container rm docverge-container
 docker create --name docverge-container docverge:latest
 rm -rf docs # very important
 docker cp docverge-container:/usr/share/nginx/html ./docs
