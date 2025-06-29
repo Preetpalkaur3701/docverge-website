@@ -23,7 +23,7 @@ export function Footer() {
                 <Mail className="h-5 w-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/preetpal-kaur-docverge/"
+                href="https://www.linkedin.com/company/docverge/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
